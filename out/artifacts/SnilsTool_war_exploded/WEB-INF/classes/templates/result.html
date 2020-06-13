@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Калькулятор СНИЛС</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Результат</h1>
+<p th:text="'Статус: ' + ${snilscheck.getTraceBack()}" style="color:darkred" />
+<a href="/index">Проверить следующий номер</a>
+</body>
+</html>

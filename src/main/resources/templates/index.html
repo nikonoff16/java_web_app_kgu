@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Калькулятор СНИЛС</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Форма для проверки СНИЛС</h1>
+<form action="#" th:action="@{/index}" th:object="${snilscheck}" method="post">
+    <p>Введите СНИЛС: <input type="text" th:field="*{snils}" /></p>
+    <p><input type="submit" value="Ввод" /> <input type="reset" value="Сброс" /></p>
+</form>
+</body>
+</html>
